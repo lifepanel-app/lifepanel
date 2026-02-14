@@ -63,11 +63,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  assets:
-    - assets/images/
-    - assets/images/icons/
-    - assets/rive/
-    - assets/lottie/
+  # Assets will be added as they are created:
+  # assets:
+  #   - assets/images/
+  #   - assets/images/icons/
+  #   - assets/rive/
+  #   - assets/lottie/
 
   fonts:
     - family: Bangers
