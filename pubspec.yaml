@@ -1,0 +1,82 @@
+name: lifepanel
+description: "LifePanel - Track every aspect of your life. Fully offline Flutter app with comic-style UI."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: any
+  riverpod_annotation: any
+
+  # Local Database
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+
+  # DI & Functional
+  get_it: any
+  fpdart: any
+
+  # Models
+  freezed_annotation: any
+  equatable: any
+  json_annotation: any
+
+  # Routing
+  go_router: any
+
+  # Game/Comic Engine (dashboard visuals)
+  flame: any
+  rive: any
+
+  # Comic Style UI & Animations
+  flutter_animate: any
+  lottie: any
+  animated_text_kit: any
+
+  # Charts
+  fl_chart: any
+
+  # Utilities
+  intl: any
+  path_provider: any
+  uuid: any
+  collection: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+  build_runner: any
+  freezed: any
+  riverpod_generator: any
+  isar_generator: ^3.1.0
+  json_serializable: any
+  mockito: any
+  mocktail: any
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/icons/
+    - assets/rive/
+    - assets/lottie/
+
+  fonts:
+    - family: Bangers
+      fonts:
+        - asset: assets/fonts/Bangers/Bangers-Regular.ttf
+    - family: ComicNeue
+      fonts:
+        - asset: assets/fonts/ComicNeue/ComicNeue-Regular.ttf
+        - asset: assets/fonts/ComicNeue/ComicNeue-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/ComicNeue/ComicNeue-Light.ttf
+          weight: 300
